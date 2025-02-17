@@ -1,0 +1,34 @@
+p{
+    color: brown;
+}
+/*Comentarios*/
+.arriba{
+    background-color: yellow;
+}
+.abajo{
+    background-color: bisque;
+} 
+
+#unico{
+    background-color: mediumaquamarine;
+}
+
+img{
+    margin: 15px;
+    border: solid rgb(71, 58, 183);
+    padding: 1px;
+}
+
+*{
+    /*Lo que a nivel laboral se debe hacer para evitar estandares de navegadores distintos*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.boton{
+    border: outset;
+    background-color: aliceblue;
+    width: 200px;
+    height: 100px;
+}

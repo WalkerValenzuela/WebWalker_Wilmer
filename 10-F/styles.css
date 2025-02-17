@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.caja{
+    border: solid black;
+    height: 200px;
+    width: 200px;   
+    margin: 20px;
+}
+
+#conteiner{
+    display: flex;
+}
+
+body{
+    display: flex;
+    justify-content: space- ;
+    align-items: center;
+    height: 100vh;
+    
+}
+#particular{
+    background-color: red;
+
+}
