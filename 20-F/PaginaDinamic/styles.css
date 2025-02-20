@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    background-color: green;
+    display: grid;
+}
+
+@media (max-width: 479px) {
+    #container{
+        height: 5000px;
+        grid-template-columns: repeat(1,ifr);
+        grid-template-rows: repeat(12,ifr);
+        grid-template-areas:
+        "header"
+        "N1"
+        "N2"
+        "N3"
+        "N4"
+        "B"
+        "B"
+        "C"
+        "C"
+        "D"
+        "D"
+        "footer"
+        ;
+       
+    }
+    hr{
+        height: 22px;
+        margin-left: 0%;
+        margin-right: 50%;
+        color: black;
+    }
+    #menu{
+        display: flex;
+    }
+
+    #B{
+        align-content: end;
+    }   
+    #BX{
+        height: 50%;
+    }   
+    #C{
+        align-content: end;
+    }   
+    #CX{
+        height: 50%;
+    }   
+    #D{
+        align-content: end;
+    }   
+    #DX{
+        height: 50%;
+    }   
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    #container{
+        height: 5000px;
+        grid-template-columns: repeat(2,ifr);
+        grid-template-rows: repeat(10,ifr);
+        grid-template-areas:
+        "header header"
+        "N1 N2"
+        "N3 N4"
+        "B B"
+        "B B"
+        "C C"
+        "C C"
+        "D D"
+        "D D"
+        "footer footer"
+        ;
+    }
+    #B{
+        display: grid;
+    }
+    #C{
+        display: grid;
+    }
+    #D{
+        display: grid;
+    }
+}
+@media (min-width: 768px)   {
+    #container{
+        height: 50cm;
+        grid-template-columns: repeat(4,ifr);
+        grid-template-rows: repeat(6,ifr);
+        grid-template-areas:
+        "header header header header"
+        "N1 N2 N3 N4"
+        "B B B B"
+        "C C C C"
+        "D D D D"
+        "footer footer footer footer"
+        ;
+    }
+    #B{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    #BX{
+        width: 50%;
+        height: 50%;
+    }
+    #C{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    #CX{
+        width: 50%;
+        height: 50%;
+    }
+    #D{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    #DX{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+#config{
+    background-color: aquamarine;
+    height: 20%;
+}
+
+header{
+    grid-area: header;
+    background-color: cyan;
+}   
+#N1{
+    grid-area: N1;
+    background-color: purple;
+}   
+#N2{
+    grid-area: N2;
+    background-color: blueviolet;
+}   
+#N3{
+    grid-area: N3;
+    background-color: darkcyan;
+}   
+#N4{
+    grid-area: N4;
+    background-color: darkred;
+}   
+#B{
+    grid-area: B;
+    background-color: gray;
+}   
+#BX{
+    grid-area: BX;
+    background-color: bisque;
+}   
+#C{
+    grid-area: C;
+    background-color: darkturquoise;
+}   
+#CX{
+    grid-area: CX;
+    background-color: yellow;
+}   
+#D{
+    grid-area: D;
+    background-color: aqua;
+}   
+#DX{
+    grid-area: DX;
+    background-color: cornflowerblue;
+}   
+footer{
+    grid-area: footer;
+    background-color: lightgreen;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: gray;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
