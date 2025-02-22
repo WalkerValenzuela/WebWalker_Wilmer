@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100vw;
+    background-color: green;
+    display: grid;
+}
+
+@media (max-width: 479px) {
+    #container{
+        height: 4000px;
+        grid-template-columns: repeat(1,ifr);
+        grid-template-rows: repeat(12,ifr);
+        grid-template-areas:
+        "header"
+        "N1"
+        "N2"
+        "N3"
+        "N4"
+        "B"
+        "B"
+        "C"
+        "C"
+        "D"
+        "D"
+        "footer"
+        ;
+       
+    }
+    hr{
+        height: 22px;
+        margin-left: 0%;
+        margin-right: 50%;
+        color: black;
+    }
+    #menu{
+        display: flex;
+    }
+
+    #B{
+        align-content: flex-start;
+    }   
+    #BX{
+        height: 50%;
+    }   
+    #C{
+        align-content: end;
+    }   
+    #CX{
+        height: 50%;
+    }   
+    #D{
+        align-content: end;
+    }   
+    #DX{
+        height: 50%;
+    }
+    button{
+        margin-bottom: 50px;
+    } 
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    #container{
+        height: 3000px;
+        grid-template-columns: repeat(2,ifr);
+        grid-template-rows: repeat(10,ifr);
+        grid-template-areas:
+        "header header"
+        "N1 N2"
+        "N3 N4"
+        "B B"
+        "B B"
+        "C C"
+        "C C"
+        "D D"
+        "D D"
+        "footer footer"
+        ;
+    }
+    #B{
+        display: grid;
+    }
+    #C{
+        display: grid;
+    }
+    #D{
+        display: grid;
+    }
+}
+
+@media (min-width: 768px)   {
+    #container{
+        height: 3000px;
+        grid-template-columns: repeat(4,ifr);
+        grid-template-rows: repeat(6,ifr);
+        grid-template-areas:
+        "header header header header"
+        "N1 N2 N3 N4"
+        "B B B B"
+        "C C C C"
+        "D D D D"
+        "footer footer footer footer"
+        ;
+    }
+    #B{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #BX{
+        width: 30%;
+        height: 50%;
+    }
+    #C{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #CX{
+        width: 30%;
+        height: 50%;
+    }
+    #D{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #DX{
+        width: 30%;
+        height: 50%;
+    }
+    
+}
+
+#Barra{
+    background-color: #69a5c0;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+#config{
+    background-color: rgb(246, 246, 246);
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    background-color: lightblue;
+}
+
+
+#textobajo{
+    margin-left: 5vw;
+}
+
+#lineabajo{
+    height: 2.5px;
+    width: 75px;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 25px; 
+}
+
+#texto{
+    width: 85%;
+    margin-bottom: 1.8cm;
+    margin-top: 1.8cm;
+}
+
+#principal{
+    color: rgb(0, 69, 139);
+    font-size: 2rem;
+    margin-top: 0.5cm;
+}
+
+#linea{
+    height: 2.5px;
+    width: 75px;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#lorem{
+    font-size: 1rem;
+    width: 60%;
+}
+
+#cuadrado{
+    margin-left: 4vw;
+    background-color: rgb(53, 53, 53);
+    height: 20%;
+    width: 10%;
+    margin-right: 17.5vh;
+}
+
+#titulo{
+    color: rgb(0, 69, 139);
+    font-size: 2rem;
+    margin-top: 2cm;
+}
+
+p{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+.bBarra{
+    width: 10%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    background-color: rgb(204, 204, 204);
+}
+
+.bConfig{
+    width: 10%;
+    margin-left: 2vw;
+    height: 3vh;
+    background-color: rgb(204, 204, 204);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(202, 192, 255);
+}   
+
+#inter{
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+#mini{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+#number{
+    font-size: 1.4rem;
+    margin: 20px;
+}
+    
+#N1{
+    grid-area: N1;
+    background-color:rgb(123, 155, 194);
+}   
+
+#N2{
+    grid-area: N2;
+    background-color:rgb(163, 184, 211);
+}   
+#N3{
+    grid-area: N3;
+    background-color: rgb(216, 226, 238);
+}   
+#N4{
+    grid-area: N4;
+    background-color: rgb(123, 155, 194);
+}   
+#B{
+    grid-area: B;
+    background-color: #efeeec;
+}   
+#BX{
+    grid-area: BX;
+    background-color: bisque;
+}   
+#C{
+    grid-area: C;
+    background-color: #eae5e2;
+}   
+#CX{
+    grid-area: CX;
+    background-color: yellow;
+}   
+#D{
+    grid-area: D;
+    background-color: #efeeec;
+}   
+#DX{
+    grid-area: DX;
+    background-color: cornflowerblue;
+}   
+footer{
+    grid-area: footer;
+    background-color: #89adcf;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#textfooter{
+    margin: 1cm;
+}s
+
+#ninth>button{
+    transition:all .5s ease-in-out;
+}
+  
+#ninth:hover button{
+    background-color: white;
+    color:cornflowerblue;
+}
+
+.buttonBox{
+    margin-top: 20px;
+    position:relative;
+    max-width: 200px;
+    min-width: 150px;
+    flex: 20%;
+}
+    
+#tremendo{
+    width:100%;
+    height:50px;
+    position:relative;
+    background:rgba(0, 0, 0, 0.27);
+    text-transform:uppercase;
+    color:white;
+    font-weight:700;
+    letter-spacing:1px;
+    border:none;
+    font-size:15px;
+    outline:none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    cursor: pointer;
+}

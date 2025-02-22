@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-width: 500px) {
+
+    #fondo {
+        background-image: url("image/fondoCel.jpg");
+        background-size: cover;
+      }
+      
+    #textmedio::after{
+        content: "HOLISTIC HEALTH & MORE";
+    }
+    
+    #logo{
+        display: none;
+    }
+
+    #boton1{
+        display: none;
+    }
+    #boton2{
+        display: none;
+    }
+    #boton3{
+        display: none;
+    }
+    #fondo{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+    #tres{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+         background-color: white;
+}
+
+    #trestext{
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 7vh;
+    }
+    
+    #trestex{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }   
+    
+footer{
+    margin-top: 5vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+}
+}
+
+@media (min-width: 501px) {
+    #fondo {
+        background-image: url("image/fondoPC.jpg");
+        background-size: cover;
+      }
+    #textmedio::after{
+        content: "HOLISTIC HEALTH";
+    }
+
+    header{
+        display: flex;
+    }
+
+    #logo{
+        width: 60%;
+        margin: 10px;
+    }
+    
+    #menu{
+        display: flex;
+        margin: 10px;
+        width: 35%;
+        justify-content: space-between;
+    }
+    
+    #boton3{
+        border: solid 2px black;
+    }
+    #uno{
+        margin-top: 25vh;
+    }
+
+    #dos{
+        display: grid;
+        grid-template-columns: repeat(3,ifr);
+        grid-template-rows: repeat(3,ifr);
+        grid-template-areas:
+        "dostexto dostexto dostexto"
+        "dos1 dos2 dos3"
+        "dos1 dos2 dos3"
+        ;
+    }
+        
+    img{
+    height: 100%;
+    width: 100%;
+    }
+    #tres{
+        display: flex;
+        width: 100vw;
+        background-color: white;
+    }
+
+    #trestext{
+        margin: 10vh 10vw;
+    }
+    #trestex{
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;       
+ } 
+ 
+footer{
+    margin-top: 5vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#options{
+display: flex;
+}
+
+#icons{
+    margin-left: 5vw;
+}
+}
+
+#fondo{    
+    height: 90vh;
+    width: 100vw;
+}
+
+#uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+#textgrande{
+    margin: 10px;
+    font-size: 1.8rem;
+}
+
+#textmedio{
+    margin: 10px;
+    font-size: 1rem;
+}
+
+#lineafuerte{
+    height: 3px;
+    width: 40px;
+    background-color: black;
+    margin: 10px;
+}
+
+
+#dos{
+    margin-top: 1vh;
+    width: 100vw;
+    background-color: #d1eee9;
+    padding-bottom: 1vh;
+}
+
+#dostexto{
+    grid-area: dostexto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    font-size: 2.2rem;
+    background-color: #d1eee9;
+}
+
+.dos1texto{
+    display: flex;
+    margin: 10px;
+    margin-bottom: 2vh;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#dos1{
+    grid-area: dos1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+}
+
+
+#dos2{
+    grid-area: dos2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+}
+
+#dos3{
+    grid-area: dos3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+}
+
+#sublinea{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    margin: 10px;
+}
+
+#cuatro{
+    width: 100vw;
+    background-color: #d1eee9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#cuatrotitulo{
+    padding-top: 5vh;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+#cuatrosub{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#formu{
+    display: flex;
+    text-align: left;
+    background-color: #eef3ed;
+    color: gray;
+    padding: 10px 20px;
+    margin: 1px 20px;
+}
+
+
+#icons{
+    display: flex;
+}
+
+p{
+    margin: 20px;
+    letter-spacing: 5px;
+}
+#twiter{
+    height: 55px;
+    width: 55px;
+}
+
+#face{
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+}
+.button_slide {
+    color: #FFF;
+    border: 2px solid aquamarine;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 cyan;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    margin: 30px;
+  }
+  .slide_right:hover {
+    box-shadow: inset 100vw 0 0 0 aquamarine;
+  }
+  
