@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(86, 226, 152);
+  font-size: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
