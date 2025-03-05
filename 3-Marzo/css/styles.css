@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, purple, cyan);
+    transform: skewX(0deg);
+}
+
+#nombre{
+    display: flex;
+    background: black;
+    color: white;
+    width: 700px;
+    height: 200px;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;    
+}
+
+#caja:hover{
+    transition: 2s;
+    transform: skewX(180deg);
+}

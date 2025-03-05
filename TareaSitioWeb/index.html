@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <title>UniAmazonia</title>
+  </head>
+  <body>
+    <header class="py-3 border-bottom sticky-top">
+      <div class="container-fluid gap-3 align-items-center">
+        <div class="row align-items-center">
+          <div class="col text-start">
+            <img
+              id="logoGov"
+              src="img/gov-co.jpg"
+              height="26"
+              width="100"
+              alt="es"
+            />
+          </div>
+          <div class="col text-center">
+            <img src="img/Logo-u.png" id="logoUdla" alt="udla" />
+          </div>
+          <div class="col text-end " justify-items="end">
+            <div class="dropdown d-flex justify-content-end align-items-end">
+                <form class="d-flex position-relative" id="buscador">
+                    <input class="form-control rounded-pill px-4 shadow-sm" type="search" placeholder="Buscar en la web..." aria-label="Buscar">
+
+                </form>
+                
+              <button
+                class="btn btn-light dropdown-toggle d-flex align-items-center"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="https://flagcdn.com/w40/es.png"
+                  alt="Español"
+                  class="me-2"
+                />
+                Español
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img
+                      src="https://flagcdn.com/w40/us.png"
+                      alt="English"
+                      class="me-2"
+                    />
+                    English
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <img
+                      src="https://flagcdn.com/w40/fr.png"
+                      alt="Français"
+                      class="me-2"
+                    />
+                    Français
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="actualiza">
+              <br /><strong>Última Actualización: </strong>04-03-2025
+              09:39:26<br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    
+
+    <div id="flow1"></div>
+  
+    <div id="carouselExample" class="carousel slide fondo" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="img/carrusel1.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/carrusel2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="img/carrusel3.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/carrusel4.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/carrusel5.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/carrusel6.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/carrusel7.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/carrusel8.jpg" class="d-block w-100" alt="..." />
+          </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="flow2"></div>
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Noticias -->
+        <div class="col-md-8">
+            <h2>Últimas Noticias</h2>
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+          
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/CapacitacionTurnitin.png" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/MiercolesCeniza.jpg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/Tapitas.jpg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/Natacion.jpg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/Silvestre.jpg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/Accesible.jpg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/Reciclador.jpg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                          <img src="img/Apoyo.jpeg" alt="foto">
+                          </svg>
+                          <div class="card-body">
+                            <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                              introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                              </div>
+                              <small class="text-body-secondary">4/Marzo</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="img/fubol.jpg" alt="foto">
+                        </svg>
+                        <div class="card-body">
+                          <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
+                            introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                            </div>
+                            <small class="text-body-secondary">4/Marzo</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="card mb-3">
+                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="card-body">
+                    <h5 class="card-title">Capacitación Turnitin Feedback Studio y OC</h5>
+                    <p class="card-text">Docentes y administrativos, fortalezcamos la integridad académica con estas herramientas clave...</p>
+                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia</h5>
+                    <p class="card-text">Resumen de la noticia...</p>
+                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia</h5>
+                    <p class="card-text">Resumen de la noticia...</p>
+                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
+                <div class="card-body">
+                    <h5 class="card-title">Título de la Noticia</h5>
+                    <p class="card-text">Resumen de la noticia...</p>
+                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enlaces Destacados -->
+        <div class="col-md-4">
+            <h2>Enlaces Destacados</h2>
+            <ul class="list-group">
+                <li class="list-group-item text-center"><a href="#"><img src="img/Inscripciones.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/Aspirantes.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/Estudiantes.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/Graduados.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/Calendario.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/transparenciayAcceso.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/OPAC.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                </li>
+                <li class="list-group-item text-center"><a href="#"><img src="img/pqrsd.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                <li class="list-group-item text-center"><a href="#"><img src="img/Participa.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                <li class="list-group-item text-center"><a href="#"><img src="img/Contratacion.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
+                    <div class="button_slide slide_right">Ingresar</div>
+                
+            </ul>
+        </div>
+
+
+    <a
+      class="btn btn-primary"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
+    >
+      Link with href </a
+    ><button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      Toggle right offcanvas
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">DERECHa</div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown izq
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+          <div class="dropdown mt-3">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown der
+            </button>
+            <ul class="dropdown-menu" style="">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+        <!-- Primer elemento -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Opción 1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Contenido de la opción 1.
+                </div>
+            </div>
+        </div>
+    
+        <!-- Segundo elemento -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Opción 2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Contenido de la opción 2.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Aside -->
+            <aside class="col-md-3 d-none d-md-block bg-light p-3">
+                <h4>Menú Secundario</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Opción 1</a></li>
+                    <li class="list-group-item"><a href="#">Opción 2</a></li>
+                    <li class="list-group-item"><a href="#">Opción 3</a></li>
+                </ul>
+            </aside>
+    
+            <!-- Contenido Principal -->
+            <div class="col-md-9">
+                <h2>Contenido</h2>
+                <p>Este es el contenido principal de la página.</p>
+            </div>
+        </div>
+    </div>    
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
