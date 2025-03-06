@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
     <title>UniAmazonia</title>
   </head>
   <body>
-    <header class="py-3 border-bottom sticky-top">
+    <header class="py-3 border-bottom">
       <div class="container-fluid gap-3 align-items-center">
-        <div class="row align-items-center">
+        <div class="row">
           <div class="col text-start">
             <img
               id="logoGov"
@@ -21,15 +22,14 @@
             />
           </div>
           <div class="col text-center">
-            <img src="img/Logo-u.png" id="logoUdla" alt="udla" />
+            <img src="img/Logo-u.png" id="logoUdla" alt="udla" >
+            <img src="img/Letras.png" id="letra" alt="letra">
           </div>
           <div class="col text-end " justify-items="end">
             <div class="dropdown d-flex justify-content-end align-items-end">
                 <form class="d-flex position-relative" id="buscador">
                     <input class="form-control rounded-pill px-4 shadow-sm" type="search" placeholder="Buscar en la web..." aria-label="Buscar">
-
-                </form>
-                
+                </form> 
               <button
                 class="btn btn-light dropdown-toggle d-flex align-items-center"
                 type="button"
@@ -76,34 +76,294 @@
       </div>
     </header>
     
+    <button class="floating-button" href="#offcanvasExample" data-bs-toggle="offcanvas">
+      Servicios Online
+    </button>
+
+    <button class="floating-button2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+      Redes Sociales
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Redes Sociales</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-body text-center">
+          <div id="oftext2">
+          ¡Siguenos en nuestras paginas oficiales!
+        </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+               alt="Facebook Logo" width="45" class="mb-3">
+          
+          <a href="https://www.facebook.com/uniamazonia" target="_blank" class="btn btn-outline-primary" id="redes">
+              Ir a Facebook
+          </a>
+      </div>
+      <div class="offcanvas-body text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" 
+             alt="Twitter/X Logo" width="35" class="mb-3">
+        
+        <a href="https://twitter.com/uniamazonia" target="_blank" class="btn btn-outline-dark" id="redes">
+            Ir a Twitter/X
+        </a>
+    </div>
+    <div class="offcanvas-body text-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
+           alt="Instagram Logo" width="40" class="mb-3">
+      
+      <a href="https://www.instagram.com/uniamazonia" target="_blank" class="btn btn-outline-danger" id="redes">
+          Ir a Instagram
+      </a>
+  </div>
+  <div class="offcanvas-body text-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" 
+         alt="YouTube Logo" width="80" class="mb-3">
     
+    <a href="https://www.youtube.com/uniamazonia" target="_blank" class="btn btn-outline-danger" id="redes">
+        Ir a YouTube
+    </a>
+</div>
+<div class="offcanvas-body text-center">
+  <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" 
+       alt="TikTok Logo" width="90" class="mb-3">
+  
+  <a href="https://www.tiktok.com/@uniamazonia" target="_blank" class="btn btn-outline-dark" id="redes">
+      Ir a TikTok
+  </a>
+</div>
+<div class="row justify-content-center"><img src="img/Logo-u.png" id="oflogo2" alt="udla" ></div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Servicios Online</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body text-center">
+        <div id="oftext">
+          Servicios Academicos brindados para fortalecer, comunicar y facilitar el acceso a la información.
+        </div>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira">
+          <img src="img/user.png">Ingreso al Chaira
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/correo.png" id="espacio">Entrar al correo
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/aula.png" id="espacio">Aula Extendida
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/campus.png" id="espacio">Campus Virtual
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/SIGC.png" id="espacio">SIGC
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/invitaciones.png" id="espacio">Invitaciones
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/convenios.png" id="espacio">Convenios OARI
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/finan.png" id="espacio">BPM.GOV
+      </button>
+        <button id="secciones" class="btn-chaira" data-bs-toggle="offcanvas" data-bs-target="#offcanvasChaira" >
+          <img src="img/SecopII.jpg" id="espacio">SECOP II
+      </button>
+      <div class="row justify-content-center"><img src="img/Logo-u.png" id="oflogo" alt="udla" ></div>
+
+      </div>
+    </div>
+
+  <div class="sticky-top" id="categoria">   
+    <div class="row">
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            La Universidad
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Presentacion</a></li>
+            <li><a class="dropdown-item" href="#">Organigrama</a></li>
+            <li><a class="dropdown-item" href="#">Normativa</a></li>
+            <li><a class="dropdown-item" href="#">Organos De Direccion</a></li>
+            <li><a class="dropdown-item" href="#">Perfil Funcionario</a></li>
+            <li><a class="dropdown-item" href="#">Directorio Funcionario</a></li>
+            <li><a class="dropdown-item" href="#">Dependencias</a></li>
+          </ul>
+      </div>
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            Programas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ciencias Agropecuarias</a></li>
+            <li><a class="dropdown-item" href="#">Ciencias Basicas</a></li>
+            <li><a class="dropdown-item" href="#">Contables, Economicas y Administrativas</a></li>
+            <li><a class="dropdown-item" href="#">Educacion</a></li>
+            <li><a class="dropdown-item" href="#">Derecho y Ciencias Politicas</a></li>
+            <li><a class="dropdown-item" href="#">Ingenieria</a></li>
+            <li><a class="dropdown-item" href="#">Ciencias De La Salud</a></li>
+            
+          </ul>
+      </div>
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            Gestión
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Control y Rendicion de cuentas</a></li>
+            <li><a class="dropdown-item" href="#">Contratacion</a></li>
+            <li><a class="dropdown-item" href="#">Plan de desarrollo institucional</a></li>
+            <li><a class="dropdown-item" href="#">Defensa Judicial</a></li>
+            <li><a class="dropdown-item" href="#">Informacion Financiera</a></li>
+            <li><a class="dropdown-item" href="#">Políticas, Planes y Programas</a></li>
+            
+          </ul>
+      </div>
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            Servicios
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Atencion Ciudadano</a></li>
+            <li><a class="dropdown-item" href="#">Foros De Discucion</a></li>
+            <li><a class="dropdown-item" href="#">Radio en linea</a></li>
+            <li><a class="dropdown-item" href="#">Tramites UniAmazonia</a></li>
+            <li><a class="dropdown-item" href="#">Noticias y Eventos</a></li>
+            <li><a class="dropdown-item" href="#">Datos Abiertos</a></li>
+            <li><a class="dropdown-item" href="#">Portafolio Sector Externo</a></li>
+            <li><a class="dropdown-item" href="#">Preguntas y respuestas frecuentes</a></li>
+            <li><a class="dropdown-item" href="#">Verificacion De Certificados</a></li>
+            <li><a class="dropdown-item" href="#">Sistema General de Regalias</a></li>
+            <li><a class="dropdown-item" href="#">Notificaciones Por Aviso</a></li>
+            <li><a class="dropdown-item" href="#"></a></li>
+            
+          </ul>
+      </div>
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            Convocatorias
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ofertas de Empleo</a></li>
+            <li><a class="dropdown-item" href="#">Invitaciones a Contratar</a></li>
+            <li><a class="dropdown-item" href="#">Elecciones</a></li>
+            <li><a class="dropdown-item" href="#">Proveedores</a></li>
+          </ul>
+      </div>
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            Investigación
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vicerrectoria de investigacion e Innovacion</a></li>
+            <li><a class="dropdown-item" href="#">Grupos de investigacion</a></li>
+            <li><a class="dropdown-item" href="#">Nuestras Revistas</a></li>
+            <li><a class="dropdown-item" href="#">Convocatorias</a></li>
+            <li><a class="dropdown-item" href="#">Unidades de Apoyo a la Investigación</a></li>
+            <li><a class="dropdown-item" href="#">Labotarios e Infraestructura</a></li>
+            <li><a class="dropdown-item" href="#">Editorial</a></li>
+            <li><a class="dropdown-item" href="#">SIGEPI</a></li>
+            <li><a class="dropdown-item" href="#">Convocatorias Minciencias</a></li>
+          </ul>
+      </div>
+      <div class="col" id="colTitulo">
+        <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            id="botonTitulo"
+          >
+            Sedes
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sede Guaviare</a></li> 
+            <li><a class="dropdown-item" href="#">Sede Putumayo</a></li> 
+            <li><a class="dropdown-item" href="#">Sede Leticia</a></li> 
+          </ul>
+      </div>
+    </div>
+  </div>  
 
     <div id="flow1"></div>
   
-    <div id="carouselExample" class="carousel slide fondo" data-bs-ride="carousel">
+    <div id="carouselExample" class="carousel slide fondo carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
+        <div class="carousel-item active" data-bs-interval="3500">
           <img src="img/carrusel1.png" class="d-block w-100" alt="..." />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="3500">
           <img src="img/carrusel2.jpg" class="d-block w-100" alt="..." />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="3500">
           <img src="img/carrusel3.png" class="d-block w-100" alt="..." />
         </div>
-        <div class="carousel-item" data-bs-interval="2000">
+        <div class="carousel-item" data-bs-interval="3500">
             <img src="img/carrusel4.jpg" class="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="3500">
             <img src="img/carrusel5.jpg" class="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="3500">
             <img src="img/carrusel6.jpg" class="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="3500">
             <img src="img/carrusel7.jpg" class="d-block w-100" alt="..." />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="3500">
             <img src="img/carrusel8.jpg" class="d-block w-100" alt="..." />
           </div>
       </div>
@@ -126,7 +386,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
     <div id="flow2"></div>
 
 <div class="container my-5">
@@ -134,14 +393,13 @@
         <!-- Noticias -->
         <div class="col-md-8">
             <h2>Últimas Noticias</h2>
-            <div class="album py-5 bg-body-tertiary">
+            <div class="album py-2 bg-body-tertiary">
                 <div class="container">
           
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/CapacitacionTurnitin.png" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -157,7 +415,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/MiercolesCeniza.jpg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -173,7 +430,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/Tapitas.jpg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -189,7 +445,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/Natacion.jpg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -205,7 +460,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/Silvestre.jpg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -221,7 +475,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/Accesible.jpg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -237,7 +490,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/Reciclador.jpg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -253,7 +505,6 @@
                     <div class="col">
                         <div class="card shadow-sm">
                           <img src="img/Apoyo.jpeg" alt="foto">
-                          </svg>
                           <div class="card-body">
                             <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                               introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -269,7 +520,6 @@
                     <div class="col">
                       <div class="card shadow-sm">
                         <img src="img/fubol.jpg" alt="foto">
-                        </svg>
                         <div class="card-body">
                           <p class="card-text">Esta es una tarjeta más amplia con texto de respaldo a continuación como
                             introducción natural al contenido adicional. Este contenido es un poco más largo.</p>
@@ -285,38 +535,6 @@
                   </div>
                 </div>
               </div>
-            <div class="card mb-3">
-                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
-                <div class="card-body">
-                    <h5 class="card-title">Capacitación Turnitin Feedback Studio y OC</h5>
-                    <p class="card-text">Docentes y administrativos, fortalezcamos la integridad académica con estas herramientas clave...</p>
-                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
-                <div class="card-body">
-                    <h5 class="card-title">Título de la Noticia</h5>
-                    <p class="card-text">Resumen de la noticia...</p>
-                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
-                <div class="card-body">
-                    <h5 class="card-title">Título de la Noticia</h5>
-                    <p class="card-text">Resumen de la noticia...</p>
-                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <img src="img/gov-co.jpg" class="card-img-top" alt="Noticia 1">
-                <div class="card-body">
-                    <h5 class="card-title">Título de la Noticia</h5>
-                    <p class="card-text">Resumen de la noticia...</p>
-                    <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
-                </div>
-            </div>
         </div>
         
         <!-- Enlaces Destacados -->
@@ -350,148 +568,357 @@
                     <div class="button_slide slide_right">Ingresar</div>
                 <li class="list-group-item text-center"><a href="#"><img src="img/Contratacion.png" id="destacado" class="card-img-left" alt="Destacado 1"></a>
                     <div class="button_slide slide_right">Ingresar</div>
+            </ul>
+        </div>
+
+        <div class="container mt-4">
+          <div class="row">
+              <!-- Aside -->
+              <aside class="col-md-3 d-none d-md-block bg-light p-3 text-center">
+                  <h4>Material Academico</h4>
+                  <ul class="list-group">
+                      <li class="list-group-item"><a href="#" id="material">Salas y Vehiculos</a></li>
+                      <li class="list-group-item"><a href="#" id="material">Vista 360</a></li>
+                      <li class="list-group-item"><a href="#" id="material">Extensión</a></li>
+                      <li class="list-group-item"><a href="#" id="material">SG-SST</a></li>
+                      <li class="list-group-item"><a href="#" id="material">NAF</a></li>
+                  </ul>
+                  
+                  <div id="row">
+                    <div class="fb-card">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+                      <h4>Universidad de la Amazonia</h4>
+                      <p>¡Síguenos para más noticias y eventos!</p>
+                      <a href="https://www.facebook.com/uniamazoniaoficial" target="_blank">Ir a Facebook</a>
+                    </div>
+                  </div>
+
+                  <div id="row">
+                  <div class="yt-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+                    <h3>Universidad de la Amazonia</h3>
+                    <p>¡Suscríbete a nuestro canal para más contenido educativo y eventos en vivo!</p>
+                    <a href="https://www.youtube.com/@UniamazoniaOficial" target="_blank">Ir a YouTube</a>
+                  </div>
+                </div>
                 
-            </ul>
-        </div>
-
-
-    <a
-      class="btn btn-primary"
-      data-bs-toggle="offcanvas"
-      href="#offcanvasExample"
-      role="button"
-      aria-controls="offcanvasExample"
-    >
-      Link with href </a
-    ><button
-      class="btn btn-primary"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasRight"
-      aria-controls="offcanvasRight"
-    >
-      Toggle right offcanvas
-    </button>
-
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">DERECHa</div>
-    </div>
-
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasExample"
-      aria-labelledby="offcanvasExampleLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
-          >
-            Dropdown izq
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-          <div class="dropdown mt-3">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown der
-            </button>
-            <ul class="dropdown-menu" style="">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+                <div id="row">
+                <div class="tramites-card">
+                  <img src="img/Tramites.png" alt="Trámites Universitarios">
+                  <h3>Trámites Universitarios</h3>
+                  <p>Consulta y gestiona tus trámites académicos de manera rápida y sencilla.</p>
+                  <a href="https://www.uniamazonia.edu.co/tramites" target="_blank">Ir a Trámites</a>
+                </div>
+              </div>
+                
+                <div id="row">
+                <div class="support-card">
+                  <img src="img/Cliente.png" alt="Atención al Cliente">
+                  <h3>Atención al Cliente</h3>
+                  <p>¿Tienes alguna duda? ¡Contáctanos para ayudarte!</p>
+                  <a href="mailto:atencion@uniamazonia.edu.co" target="_blank">Contactar</a>
+                </div>
+                </div>
+              
+              </aside>
+      
+              <div class="col">
+                  <h2>Sobre Nosotros</h2>
+                  <div class="col-12">
+                    <div class="card mb-3">
+                      <a href="#"><img src="img/Camino.jpg" class="card-img-top" alt="Noticia 1"></a>
+                      <div class="card-body">
+                          <h5 class="card-title">Camino a la acreditacion institucional</h5>
+                          <p class="card-text">Docentes y administrativos, fortalezcamos la integridad académica con estas herramientas clave...</p>
+                          <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                      </div>
+                  </div>
+                  <div class="card mb-3">
+                    <a href="#"><img src="img/Transparencia.png" class="card-img-top" alt="Noticia 1"></a>
+                      <div class="card-body">
+                          <h5 class="card-title">Transparencia y acceso a la Informacion</h5>
+                          <p class="card-text">Transparencia en la informacion</p>
+                          <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                      </div>
+                  </div>
+                  <div class="card mb-3">
+                    <a href="#"><img src="img/Plan.jpg" class="card-img-top" alt="Noticia 1"></a>
+                      <div class="card-body">
+                          <h5 class="card-title">Plan de Desarrollo Institucional</h5>
+                          <p class="card-text">2020 - 2029 "Gestión e investigacion para el desarrollo de la amazonia"</p>
+                          <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                      </div>
+                  </div>
+                  <div class="card mb-3">
+                    <a href="#"><img src="img/Sistema.png" class="card-img-top" alt="Noticia 1"></a>
+                      <div class="card-body">
+                          <h5 class="card-title">Sistema de informacion Normativa</h5>
+                          <p class="card-text">Repositorio Documental</p>
+                          <a href="#" class="btn btn-primary" id="botonNoticias">Leer más</a>
+                      </div>
+                  </div>            
+                </div>
+              </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="accordion" id="accordionExample">
-        <!-- Primer elemento -->
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Opción 1
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Contenido de la opción 1.
-                </div>
-            </div>
-        </div>
-    
-        <!-- Segundo elemento -->
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Opción 2
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Contenido de la opción 2.
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container mt-4">
-        <div class="row">
-            <!-- Aside -->
-            <aside class="col-md-3 d-none d-md-block bg-light p-3">
-                <h4>Menú Secundario</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="#">Opción 1</a></li>
-                    <li class="list-group-item"><a href="#">Opción 2</a></li>
-                    <li class="list-group-item"><a href="#">Opción 3</a></li>
-                </ul>
-            </aside>
-    
-            <!-- Contenido Principal -->
-            <div class="col-md-9">
-                <h2>Contenido</h2>
-                <p>Este es el contenido principal de la página.</p>
-            </div>
-        </div>
-    </div>    
+      </div>   
 
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Repositorio De La Verdad
+              </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    <div class="row">
+                      <div class="col">
+                        <a href="#">
+                        <img src="img/Repositorio.jpg" class="card-img-top" alt="Repositorio"></div></a>
+                      <div class="col">
+                        <div class="row" id="secciones"><h4>Repositorio De La Verdad</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic temporibus nulla rerum quod iste dolor labore similique eligendi, enim numquam dolore dolores suscipit, quibusdam et nobis amet perferendis ratione.</div>
+                        <div class="row text-center">
+                          <div><div class="button_slide slide_right center">Ingresar</div></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Publica Con Nosotros
+              </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                      <div class="col">
+                        <a href="#">
+                        <img src="img/Publica.png" class="card-img-top" alt="Publica"></div></a>
+                      <div class="col">
+                        <div class="row" id="secciones"><h4>Publica Con Nosotros</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic temporibus nulla rerum quod iste dolor labore similique eligendi, enim numquam dolore dolores suscipit, quibusdam et nobis amet perferendis ratione.</div>
+                        <div class="row text-center">
+                          <div><div class="button_slide slide_right center">Ingresar</div></div>
+                      </div>
+                    </div>
+                  </div>            
+              </div>
+          </div>
+      </div>
+  
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Periódico Virtual
+              </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <a href="#">
+                    <img src="img/Periodico.jpeg" class="card-img-top" alt="Periodico"></div></a>
+                  <div class="col">
+                    <div class="row" id="secciones"><h4>Periódico "Construyendo Región de la Universidad de la Amazonia"</h4>
+                      Publicaciones Virtuales:
+                    <a href="#">No. 21 - I-2017 ISSN: 1909-2067(pdf)</a>
+                    <a href="#">No. 22 - II-2017 ISSN: 1909-2067(pdf)</a>
+                    <a href="#">No. 23 - I-2018 ISSN: 1909-2067(pdf)</a>
+                    etc...
+                    </div>
+                    <div class="row text-center">
+                      <div><div class="button_slide slide_right center">Ingresar</div></div>
+                  </div>
+                </div>
+              </div>                
+            </div>
+          </div>
+      </div>
+  
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Nuestras Revistas
+              </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a href="#">
+                    <img src="img/Logo_editorial.png" class="card-img-top" alt="Logo_editorial"></div></a>
+                  <div class="col">
+                    <div class="row" id="secciones"><h4>Portal Revistas Universidad de la Amazonia.</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam aliquid id nobis consequuntur assumenda veritatis fugit, magni quas et porro, eveniet, magnam possimus impedit iure quaerat quidem corporis maiores!</p></div>
+                    <div class="row text-center">
+                      <div><div class="button_slide slide_right center">Ingresar</div></div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+          </div>
+      </div>
+  
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Plan De Desarrollo
+              </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <a href="#">
+                    <img src="img/PDI2020-2029.png" class="card-img-top" alt="PDI2020"></div></a>
+                  <div class="col">
+                    <div class="row" id="secciones"><h4>Plan de Desarrollo Institucional 2020 - 2029 "Gestión e Investigación para el Desarrollo de la Amazonía"</h4>
+                     <p> Plan de desarrollo institucional (PDI)</p>
+                      </div>
+                    <div class="row text-center">
+                      <div><div class="button_slide slide_right center">Ingresar</div></div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+      </div>
+  
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Instructivo POA
+              </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <a href="#">
+                    <img src="img/Portada_Instructivo_POA.png" class="card-img-top" alt="Portada_Instructivo_POA"></div></a>
+                  <div class="col">
+                    <div class="row" id="secciones">
+                      <h4> Interactivo Plan Operativo Anual (POA)</h4>
+                      </div>
+                    <div class="row text-center">
+                      <div><div class="button_slide slide_right center">Ingresar</div></div>
+                  </div>
+                </div>
+              </div>             
+              </div>
+          </div>
+      </div>
+  
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Rendicion De Cuentas
+              </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col">
+                    <a href="#">
+                    <img src="img/Rendicion.png" class="card-img-top" alt="Rendicion"></div></a>
+                  <div class="col">
+                    <div class="row" id="secciones">
+                      <h4>Año 2023</h4>
+                      Informe de Audiencia Pública. Rendición de Cuentas - 2023(pdf)
+                      </div>
+                    <div class="row text-center">
+                      <div><div class="button_slide slide_right center">Ingresar</div></div>
+                  </div>
+                </div>
+              </div>                  
+            </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="row" id="extras">
+    <div class="col">
+      <h5 id="extraTitulo">Atención al ciudadano</h5>
+      <a href="#" id="text"><p >» PQRS-D</p></a>
+      <a href="#" id="text"><p >» Glosario</p></a>
+      <a href="#" id="text"><p >» Preguntas Frecuentes</p></a>
+      <a href="#" id="text"><p >» Tramites Uniamazonia</p></a>
+      <a href="#" id="text"><p >» Política de Privacidad</p></a>
+      <a href="#" id="text"><p >» Política Editorial</p></a>
+      <a href="#" id="text"><p >» Mapa del Sitio</p></a>
+      <a href="#" id="text"><p >» Notificaciones por Aviso</p></a>
+      <h5 id="extraTitulo">Programas</h5>
+      <a href="#" id="text"><p >» Pregados</p></a>
+      <a href="#" id="text"><p >» Posgrados</p></a>
+      <a href="#" id="text"><p >» Educación Continuada</p></a>
+      <a href="#" id="text"><p >» Calendario Académico</p></a>
+      <a href="#" id="text"><p >» Admisiones y Registro</p></a>
+      <a href="#" id="text"><p >» Tarifas / Derechos Pecuniarios</p></a>
+      <a href="#" id="text"><p >» Instructivo - Procesos Académico</p></a>
+    </div>
+    <div class="col">
+        <h5 id="extraTitulo">Aplicaciones Web</h5>
+        <a href="#" id="text"><p >» Inscripciones (Pregrado y Posgrado)</p></a>
+        <a href="#" id="text"><p >» Liquidación</p></a>
+        <a href="#" id="text"><p >» Catálogo en Línea (OPAC)</p></a>
+        <a href="#" id="text"><p >» SIGEPI</p></a>
+        <h5 id="extraTitulo">Descubre la Universidad</h5>
+        <a href="#" id="text"><p >» Marco Jurídico</p></a>
+        <a href="#" id="text"><p >» Rendición de Cuentas</p></a>
+        <a href="#" id="text"><p >» Plan de Desarrollo PDI</p></a>
+        <a href="#" id="text"><p >» Transparencia y Acceso a la Información</p></a>
+        <a href="#" id="text"><p >» Participa</p></a>
+        <a href="#" id="text"><p >» Portal para niños</p></a>
+        <a href="#" id="text"><p >» Ofertas de Empleo</p></a>
+    </div>
+
+    <div class="col">
+      <h5 id="extraTitulo">Información institucional</h5>
+        <a href="#" id="text"><p >» Estatuto General</p></a>
+        <a href="#" id="text"><p >» Estatuto Docente</p></a>
+        <a href="#" id="text"><p >» Estatuto Estudiantil</p></a>
+        <a href="#" id="text"><p >» Estatuto de Contratación</p></a>
+        <a href="#" id="text"><p >» Estatuto de Biblioteca</p></a>
+        <a href="#" id="text"><p >» Estatuto del Investigador</p></a>
+        <a href="#" id="text"><p >» Estatuto de Electoral</p></a>
+        <a href="#" id="text"><p >» Estatuto de Presupuestal</p></a>
+        <a href="#" id="text"><p >» Estatuto de Posgrados</p></a>
+        <a href="#" id="text"><p >» Políticas de Bienestar Universitario</p></a>
+    </div>
+    <div class="col">
+      <h5 id="extraTitulo">Servicios</h5>
+      <a href="#" id="text"><p >» Consultorio Jurídico y Centro de Conciliación Virtual</p></a>
+      <a href="#" id="text"><p >» Biblioteca</p></a>
+      <a href="#" id="text"><p >» Editorial Uniamazonia</p></a>
+      <a href="#" id="text"><p >» Consultorio Contable Tributario</p></a>
+      <a href="#" id="text"><p >» Núcleos de Apoyo Contable y Fiscal (NAF)</p></a>
+      <a href="#" id="text"><p >» Consultorio Jurídico</p></a>
+      <a href="#" id="text"><p >» Centro de Conciliación</p></a>
+      <a href="#" id="text"><p >» Centro de Idiomas</p></a>
+      <a href="#" id="text"><p >» Unidad de Emprendimiento</p></a>
+      <a href="#" id="text"><p >» Proveedores</p></a>
+      <h5 id="extraTitulo">Dónde estamos</h5>
+      <a href="#" id="text"><p > » Programas en otras ciudades</p></a>
+    </div>
+  </div>
+
+  <footer class="container">
+    <div class="row">
+    <a href="#"><img src="img/Ministerios.png" alt="ministerios" id="foot"></a>
+  </div>
+  <div class="row text-center" id="copy">
+    <p>Copyright © 2022 uniamazonia.edu.co. Todos los derechos reservados. | Política de Privacidad</p>
+    <p>Sede Porvenir Calle 17 Diagonal 17 con Carrera 3F - Barrio Porvenir</p>
+    <p>Atención Público: Lunes a Viernes de 7:30 a.m. a 11:30 m. y 1:30 p.m. a 5:30 p.m.</p>
+    <p>Contacto: atencionalciudadano@uniamazonia.edu.co - Contenidos web: webmaster@uniamazonia.edu.co</p>
+    <p>Notificaciones judiciales: njudiciales@uniamazonia.edu.co</p>
+    <p>Vigilada Ministerio de Educación</p>
+    <p>Florencia, Caquetá, Colombia, Suramérica</p>
+    <p>Visitas: Hoy 0 | Este mes 0 | 38994</p>
+  </div>
+  </footer>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>

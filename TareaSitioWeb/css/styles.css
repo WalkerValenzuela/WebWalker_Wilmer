@@ -4,26 +4,19 @@
   box-sizing: border-box;
 }
 
-#logoAmazo {
-  width: 55%;
-  height: 55%;
-}
-
 #logoGov {
   height: 50px;
   width: 180px;
 }
+
 #logoUdla {
-  width: 90px;
-  height: 90px;
-}
-#PortadaLogo {
-  justify-content: center;
+  width: 140px;
+  height: 140px;
 }
 
 #destacado {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
   margin-right: 20px;
 }
 
@@ -39,23 +32,128 @@ header {
   max-width: 300px;
 }
 
+#divletra{
+  text-align: center;
+}
+
+#letra{
+  width: 400px;
+  height: 100px;
+}
+
+#categoria{
+  width: 98vw;
+}
+
+#text{
+  color: rgb(22, 181, 1);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+#botonTitulo{
+  transition: 2s;
+  background-color: rgb(233, 233, 233);
+  color: black;
+  border-radius: 0;
+  border: 0;
+  height: 45px;
+  width: 100%;
+}
+
+#botonTitulo:hover{
+  transition: 2s;
+  background-color: #27ae60;
+}
+
 #botonNoticias {
   transition: 1.5s;
   border-radius: 2px;
-  background-color: rgb(32, 204, 32);
+  background-color: rgb(0, 82, 0);
   border: #00cc00;
 }
 
+#colTitulo{
+  padding: 0;
+  margin: 0;
+}
+
 #flow1{
-  width: 100vw;
+  width: 99vw;
   height: 20px;
-  background: linear-gradient(180deg, red, green);
+  background: linear-gradient(180deg, green, rgb(0, 74, 0));
 }
 
 #flow2{
-  width: 100vw;
+  width: 99vw;
   height: 20px;
-  background: linear-gradient(0deg, red, green);
+  background: linear-gradient(0deg, green, rgb(0, 74, 0));
+}
+
+#material{
+  transition: 2s;
+  text-decoration-line: none;
+  color: #009900;
+}
+
+#material:hover{
+  transition: 2s;
+  color: black;
+}
+
+#secciones{
+  margin-bottom: 13px;
+}
+
+#extras{
+  margin-top: 25px;
+  padding-top: 20px;
+  background-color: rgba(236, 236, 236, 0.288);
+  border-radius: 10px;
+}
+
+#extraTitulo{
+  color: rgb(0, 87, 0);
+  font-size: 0.9rem;
+}
+
+#foot{
+  width: 100%;
+  height: 100%;
+}
+
+#copy{
+  margin-top: 50px;
+}
+
+#redes{
+  margin-left: 20px;
+}
+
+#espacio{
+  margin-right: 7px;
+}
+
+#oflogo{
+  margin-top: 70px;
+  width: 125px;
+  height: 100px;
+}
+
+#oflogo2{
+  margin-top: 25px;
+  width: 125px;
+  height: 100px;
+}
+
+#oftext2{
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#oftext{
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 #botonNoticias:hover {
@@ -105,4 +203,262 @@ header {
 
 .accordion-collapse {
   transition: all 0.3s ease-in-out;
+}
+
+.fb-card {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  background: #1877f2;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fb-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.fb-card h3 {
+  margin: 10px 0;
+}
+
+.fb-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.fb-card a {
+  display: inline-block;
+  background: white;
+  color: #1877f2;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.fb-card a:hover {
+  background: #0e5fd5;
+  color: white;
+}
+
+.yt-card {
+  margin-top: 15px;
+  width: 300px;
+  text-align: center;
+  background: #ff0000a0;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.yt-card img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.yt-card h3 {
+  margin: 10px 0;
+}
+
+.yt-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.yt-card a {
+  display: inline-block;
+  background: white;
+  color: #ff0000;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.yt-card a:hover {
+  background: #cc0000;
+  color: white;
+}
+
+.support-card {
+  margin-top: 15px;
+  width: 300px;
+  text-align: center;
+  background: #27ae60; /* Verde para atención */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support-card img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.support-card h3 {
+  margin: 10px 0;
+}
+
+.support-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.support-card a {
+  display: inline-block;
+  background: white;
+  color: #27ae60;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.support-card a:hover {
+  background: #1e8449;
+  color: white;
+}
+
+.tramites-card {
+  margin-top: 15px;
+  width: 300px;
+  text-align: center;
+  background: #f39c12; /* Naranja institucional */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tramites-card img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.tramites-card h3 {
+  margin: 10px 0;
+}
+
+.tramites-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.tramites-card a {
+  display: inline-block;
+  background: white;
+  color: #f39c12;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.tramites-card a:hover {
+  background: #d68910;
+  color: white;
+}
+
+.accordion-body {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.accordion-collapse.show .accordion-body {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeEffect {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.carousel-item {
+  animation: fadeEffect 1s ease-in-out;
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 10;
+}
+
+.floating-button:hover {
+  background-color: #00b806;
+  transform: scale(1.1);
+}
+
+.floating-button2 {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 10;
+}
+
+.floating-button2:hover {
+  background-color: #00b806;
+  transform: scale(1.1);
+}
+
+.btn-chaira {
+  background-color: #2E7D32; 
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-chaira:hover {
+  background-color: #1B5E20;
+  transform: scale(1.05);
 }
